@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="mt-4">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/fpic.jpg' %}"
+      alt="profile"
+      class="img-thumbnail mt-4"
+      style="width: 170px; height: 220px"
+    />
+  </div>
+
+  <div class="mt-5">
+    <h1 class="font-weight-bold text-white px-5">Hello,</h1>
+  </div>
+  <div class="mx-5 px-5" style="line-height: 2rem">
+    <p class="text-end text-justify text-white">
+      I am <b class="text-warning">Ali Sher</b> ipsum dolor sit amet consectetur
+      adipisicing elit. Totam consectetur eos ex velit dolores iste quod tenetur
+      repellat, ea alias tempore magnam vel saepe illo repudiandae labore
+      accusamus maiores. Repellendus fugiat fugit eius, ipsa molestiae,
+      inventore ullam itaque praesentium, laudantium minima nisi. Temporibus,
+      quibusdam amet. Dolores dolor dolorum vel ex.
+    </p>
+  </div>
+  <div class="text-center">
+    <a href="{% url "contact" %}" class="btn btn-outline-warning my-3 mx-5">Hire Me</a>
+    <a href="{% url "contact" %}" class="btn btn-outline-info my-3 ">Contact</a>
+  </div>
+</div>
+{% endblock content %}

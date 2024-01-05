@@ -1,0 +1,20 @@
+{% load static  %}
+<div class="border-end border-warning">
+            <div class="text-center mt-5">
+                <img
+                    src="{% static 'core/images/fpic.jpg' %}"
+                    alt="profile"
+                    class="img-fluid rounded-circle"
+                    style="width: 100px; height: 100px"/>
+
+                <h4 class="text-center text-white mt-2">Ali Sher</h4>
+                <hr class="border-light ">
+            </div>
+            <nav class="nav flex-column text-center">
+              <a href="{% url "home" %}" class="nav-link {{home_active}}">Home</a>
+              <a href="{% url "services" %}" class="nav-link {{services_active}}">Services</a>
+              <a href="{% url "skills" %}" class="nav-link {{skills_active}}">Skills</a>
+              <a href="{% url "contact" %}" class="nav-link {{contact_active}}">Contact</a>
+            </nav>
+
+          </div>
