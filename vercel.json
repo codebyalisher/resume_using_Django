@@ -3,7 +3,7 @@
     {
       "src": "resume/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.1" }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.10.0" }
     },
     {
       "src": "build_files.sh",
